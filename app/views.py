@@ -1,10 +1,11 @@
 from django.shortcuts import render
-from  django.http import HttpResponse
-def hello(request): 
-    return  HttpResponse("HELLO WOLRD")
+# def hello(request): 
+#     return  HttpResponse("HELLO WOLRD")
 
-def goodbey(request):
-    return HttpResponse("good bey ")
+# def goodbey(request):
+#     return HttpResponse("good bey ")
 
-def belakh(request):
-    return HttpResponse("bea bokhoreeesh ")
+# def belakh(request):
+#     return HttpResponse("bea bokhoreeesh ")
+def hello(request):
+    return render(request,'index.html')
