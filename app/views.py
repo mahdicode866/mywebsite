@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import  render
+from django.http import HttpResponse
 # def hello(request): 
 #     return  HttpResponse("HELLO WOLRD")
 
@@ -7,5 +8,8 @@ from django.shortcuts import render
 
 # def belakh(request):
 #     return HttpResponse("bea bokhoreeesh ")
-def hello(request):
+
+def welcome(request):
+    return HttpResponse("welcome to our web site master here we have some informatin about this world")
+def hello (request):
     return render(request,'index.html')

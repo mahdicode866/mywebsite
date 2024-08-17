@@ -1,8 +1,6 @@
-from django.urls import path
-from app import views
+from  django.urls import path
+from . import views
 urlpatterns = [
-    # path('hello/',views.hello),
-    # path('good',views.goodbey),
-    # path('belakh',views.belakh)
-    path ('hello/',views.hello),
-]
+    path("welcome",views.welcome),
+    path("hello", views.hello)
+    ]
